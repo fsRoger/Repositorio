@@ -1,0 +1,45 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	border: none;
+}
+body{
+	background: black;
+	color: #fff;
+
+}
+.all-top{
+	padding: 0.5em;
+	margin-top: -30px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100pt;
+	background-color: #3399cc;
+}
+.all-top h1{
+	margin: 20pt;
+}
+
+.menu ul{
+	list-style-type: none;
+
+}
+
+.menu ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background: url(menu.png) no-repeat left bottom;
+}
+
+.menu a:hover, .selecionado a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+
+}
