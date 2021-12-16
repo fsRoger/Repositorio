@@ -1,0 +1,414 @@
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend
+$ dir
+arredondamento-imagens  elementos-flutuantes       estilizando-tabelas  imagens           menu.png                 posicionamentos-project  projetoanabella
+barravertical.css       elementos-patica           formatar-links.html  imagens-liquidas  navegacao-abas           projeto                  seta.png
+barravertical.html      elementosinlineblock.html  fotonoticia          imagenssite       noticias-cidade-project  projeto-barra-vertical   sitehtml
+caixa                   estilizando-formularios    herança              layout-fixo       pdf                      projeto-blog             sobrepondo-elementos-project
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend
+$ cd projeto
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/projeto
+$ dir
+divisor.png  fundo-horizontal.png  indexvt.html  menu.png  menuhorizontal.html  menuhrcss.css  seta.png  vtcss.css
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/projeto
+$ cd ../
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend
+$  cd noticia-cidade-project
+bash: cd: noticia-cidade-project: No such file or directory
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend
+$ cd noticias-cidade-project
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project
+$ dir
+brasil.html  ciencias.html     divisor.png  economia.html  fotos.html       fundo.png   internacional.html  marcador.png  saude.html  tecnologia.jpg
+cidade.jpg   detalhe-topo.png  doutor.jpg   estilo.css     fundo-caixa.png  index.html  logo.png            mundo.jpg     taxi.jpg
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project
+$ git init
+Initialized empty Git repository in C:/Users/keykr/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project/.git/
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git checkout roger-trab
+error: pathspec 'roger-trab' did not match any file(s) known to git
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        brasil.html
+        cidade.jpg
+        ciencias.html
+        detalhe-topo.png
+        divisor.png
+        doutor.jpg
+        economia.html
+        estilo.css
+        fotos.html
+        fundo-caixa.png
+        fundo.png
+        index.html
+        internacional.html
+        logo.png
+        marcador.png
+        mundo.jpg
+        saude.html
+        taxi.jpg
+        tecnologia.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git add .
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   brasil.html
+        new file:   cidade.jpg
+        new file:   ciencias.html
+        new file:   detalhe-topo.png
+        new file:   divisor.png
+        new file:   doutor.jpg
+        new file:   economia.html
+        new file:   estilo.css
+        new file:   fotos.html
+        new file:   fundo-caixa.png
+        new file:   fundo.png
+        new file:   index.html
+        new file:   internacional.html
+        new file:   logo.png
+        new file:   marcador.png
+        new file:   mundo.jpg
+        new file:   saude.html
+        new file:   taxi.jpg
+        new file:   tecnologia.jpg
+
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git commit -m "Enviando Todos os arquivos numa primeira vez"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'keykr@DESKTOP-9DERCVG.(none)')
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git config --global user.email "keykrono117@gmail.com"
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git config --global user.name "RogerSilva"
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git commit -m "Comitando os arquivos pela primeira vez"
+[master (root-commit) caed01a] Comitando os arquivos pela primeira vez
+ 19 files changed, 803 insertions(+)
+ create mode 100644 brasil.html
+ create mode 100644 cidade.jpg
+ create mode 100644 ciencias.html
+ create mode 100644 detalhe-topo.png
+ create mode 100644 divisor.png
+ create mode 100644 doutor.jpg
+ create mode 100644 economia.html
+ create mode 100644 estilo.css
+ create mode 100644 fotos.html
+ create mode 100644 fundo-caixa.png
+ create mode 100644 fundo.png
+ create mode 100644 index.html
+ create mode 100644 internacional.html
+ create mode 100644 logo.png
+ create mode 100644 marcador.png
+ create mode 100644 mundo.jpg
+ create mode 100644 saude.html
+ create mode 100644 taxi.jpg
+ create mode 100644 tecnologia.jpg
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$   git branch
+* master
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git branch
+* master
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ branch roger-trab
+bash: branch: command not found
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git branch roger_trab
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git branch
+* master
+  roger_trab
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (master)
+$ git checkout roger_trab
+Switched to branch 'roger_trab'
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git branch
+  master
+* roger_trab
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git branch -d master
+Deleted branch master (was caed01a).
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git branch
+* roger_trab
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git log
+commit caed01a95e39dfeea226e442e405f21fe95da888 (HEAD -> roger_trab)
+Author: RogerSilva <keykrono117@gmail.com>
+Date:   Thu Dec 16 14:38:51 2021 -0300
+
+    Comitando os arquivos pela primeira vez
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$  git status
+On branch roger_trab
+nothing to commit, working tree clean
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git add .
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git commit "comitando com branch roger todos os arquivos iniciais"
+error: pathspec 'comitando com branch roger todos os arquivos iniciais' did not match any file(s) known to git
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ ^C
+
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git commit -m "comitando com branch roger todos os arquivos iniciais"
+On branch roger_trab
+nothing to commit, working tree clean
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git log
+commit caed01a95e39dfeea226e442e405f21fe95da888 (HEAD -> roger_trab)
+Author: RogerSilva <keykrono117@gmail.com>
+Date:   Thu Dec 16 14:38:51 2021 -0300
+
+    Comitando os arquivos pela primeira vez
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git clone https://github.com/Keykrono/Front-Views.git
+Cloning into 'Front-Views'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git pull origin
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git status
+On branch roger_trab
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Front-Views/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ dir
+Front-Views  cidade.jpg     detalhe-topo.png  doutor.jpg     estilo.css  fundo-caixa.png  index.html          logo.png      mundo.jpg   taxi.jpg
+brasil.html  ciencias.html  divisor.png       economia.html  fotos.html  fundo.png        internacional.html  marcador.png  saude.html  tecnologia.jpg
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git log
+commit caed01a95e39dfeea226e442e405f21fe95da888 (HEAD -> roger_trab)
+Author: RogerSilva <keykrono117@gmail.com>
+Date:   Thu Dec 16 14:38:51 2021 -0300
+
+    Comitando os arquivos pela primeira vez
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git push origin
+fatal: The current branch roger_trab has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin roger_trab
+
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git push --set-upstream origin roger_trab
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git remote -v
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git remote add origin https://github.com/Keykrono/Front-Views
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git remote -v
+origin  https://github.com/Keykrono/Front-Views (fetch)
+origin  https://github.com/Keykrono/Front-Views (push)
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git status
+On branch roger_trab
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    brasil.html
+        deleted:    cidade.jpg
+        deleted:    ciencias.html
+        deleted:    detalhe-topo.png
+        deleted:    divisor.png
+        deleted:    doutor.jpg
+        deleted:    economia.html
+        deleted:    estilo.css
+        deleted:    fotos.html
+        deleted:    fundo-caixa.png
+        deleted:    fundo.png
+        deleted:    index.html
+        deleted:    internacional.html
+        deleted:    logo.png
+        deleted:    marcador.png
+        deleted:    mundo.jpg
+        deleted:    saude.html
+        deleted:    taxi.jpg
+        deleted:    tecnologia.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Front-Views/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git add .
+warning: adding embedded git repository: Front-Views
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Front-Views
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Front-Views
+hint:
+hint: See "git help submodule" for more information.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git commit -m "reorganizando"
+[roger_trab 526394b] reorganizando
+ 20 files changed, 1 insertion(+), 803 deletions(-)
+ create mode 160000 Front-Views
+ delete mode 100644 brasil.html
+ delete mode 100644 cidade.jpg
+ delete mode 100644 ciencias.html
+ delete mode 100644 detalhe-topo.png
+ delete mode 100644 divisor.png
+ delete mode 100644 doutor.jpg
+ delete mode 100644 economia.html
+ delete mode 100644 estilo.css
+ delete mode 100644 fotos.html
+ delete mode 100644 fundo-caixa.png
+ delete mode 100644 fundo.png
+ delete mode 100644 index.html
+ delete mode 100644 internacional.html
+ delete mode 100644 logo.png
+ delete mode 100644 marcador.png
+ delete mode 100644 mundo.jpg
+ delete mode 100644 saude.html
+ delete mode 100644 taxi.jpg
+ delete mode 100644 tecnologia.jpg
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git pull origin
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 592 bytes | 16.00 KiB/s, done.
+From https://github.com/Keykrono/Front-Views
+ * [new branch]      main       -> origin/main
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git pull origin main
+From https://github.com/Keykrono/Front-Views
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git push -all origin
+error: did you mean `--all` (with two dashes)?
+
+keykr@DESKTOP-9DERCVG MINGW64 ~/OneDrive/Área de Trabalho/projetoend/noticias-cidade-project (roger_trab)
+$ git push --all origin
+ git push --all origin
+
+
+git push --all origin
+git remote -v
+
