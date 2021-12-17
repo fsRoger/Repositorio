@@ -4,28 +4,58 @@
 	border: none;
 }
 body{
-	background: black;
+	background: #d1d1d1 url(pretocouro.jpg);
 	color: #fff;
+	width: 100%;
+	height: 2000px;
 
 }
-.all-top{
+#cabeçalho ul {
+	margin-top: 50px;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	background: #159cb0 url(fundo-horizontal.png) no-repeat;
+	float: left;
+}
+#cabeçalho ul li{
+	float: left;
+	text-align: center;
+
+}
+#cabeçalho ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(divisor.png) repeat-y left top;
+	text-align: center;
+}
+#cabeçalho ul .primeiro a {
+	background: none;
+}
+
+#cabeçalho ul a:hover {
+	color: #085662;
+	background: #44cade;
+}
+.topo{
 	padding: 0.5em;
 	margin-top: -30px;
 	display: block;
 	text-align: center;
 	width: 100%;
-	height: 100pt;
-	background-color: #3399cc;
+	height: 160px;
+	background: #3399cc url(cabecalho2.jpg);
 }
-.all-top h1{
+.topo h1{
 	margin: 20pt;
 }
-
 .menu ul{
 	list-style-type: none;
-
+	margin-top: 100px;
 }
-
 .menu ul a {
 	width: 200px;
 	height: 40px;
@@ -36,10 +66,8 @@ body{
 	line-height: 40px;
 	background: url(menu.png) no-repeat left bottom;
 }
-
-.menu a:hover, .selecionado a {
+.menu a:hover,  a {
 	background-position: right bottom;
 	background-color: #f99200;
 	color: #fff;
-
 }
