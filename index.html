@@ -11,6 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <script src="data-dinamica.js"></script>
     <!-- HTML5Shiv -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -19,14 +20,15 @@
 	<title>-Portifólio-</title>
 </head>
 <body>
-	<header><!--INICIO DO CABEÇALHO------------------------------------------------------------>
+	<header>
+    <!--INICIO DO CABEÇALHO------------------------------------------------------------>
 		<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
 			<div class="container">
 				<a href="index.html" class="navbar-brand">
         	<i class="fab fa-r-project fa-4x text-light"></i>
         </a>
 
-        <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav-principal">
+        <button class="navbar-toggler bg-light"  data-toggle="collapse" data-target="#nav-principal">
             <i class="navbar-toggler-icon botaobranco"></i>
         </button>
 
@@ -55,7 +57,30 @@
 			</div>
 		</nav>
 	</header><!--FIM DO CABEÇALHO-------------------------------------------------------->
-
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="caixa">
+            <img src="img/ro.jfif" style="border-radius: 300px"; width="300px" height="300px">   
+            <button class="clock"> 
+              <i class="far fa-clock fa-2x ml-1 mt-2"style="width: 50px;"></i>
+                 script
+              <br></br>
+              <script> 
+                var data = new Date()
+                data 
+                document.write (data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+              </script>
+            </button>
+          </div>
+        </div>
+       
+       
+        </div>
+      </div>
+    </div>
+  </section>
 	<section id="home" class="d-flex"><!--INICIO SEÇAO HOME------------------------------>
       <div class="container align-self-center">
         <div class="row">
@@ -85,18 +110,24 @@
               </div><!--fim inner------------------------------------------------------------>
               <!--controles-->
               <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
-                <i class="fas fa-angle-left fa-3x"></i>
+                <i class="fas fa-angle-left fa-3x text-black-50"></i>
               </a>
 
               <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
-                <i class="fas fa-angle-right fa-3x"></i>
+                <i class="fas fa-angle-right fa-3x text-black-50"></i>
               </a>             
-
             </div> 
           </div>
         </div>
       </div>
     </section><!---FIM DA SEÇAO HOME------------------------------------------------------>
+
+
+
+      
+
+
+
 
     <section id="cartoes"><!--- secao de cartoes ------------------------------------------------------------------------------------->
       <div class="container d-none d-md-block">
@@ -110,12 +141,12 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card">
+            <div class="card"><a href="">
               <div class="card-head">
                 <h4 class="card-title">Museu</h4>
               </div>
               <img class="card-img-bottom" src="img/site1.jfif" width="200px" height="300px">
-            </div>
+            </div></a>
           </div>
           <div class="col-md-3">
             <div class="card">
@@ -155,17 +186,17 @@
             <br>
             <h2>JAVASCRIPT</h2>
             <div class="progress">
-              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
             </div>
             <br>
             <h2>PYTHON</h2>
             <div class="progress">
-              <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+              <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
             </div>
             <br>
             <h2>PHP</h2>
             <div class="progress">
-              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
+              <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
             </div>
             
           </div>

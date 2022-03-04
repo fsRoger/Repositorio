@@ -27,31 +27,57 @@ nav.navbar-transparente {
 	background: white;
 	margin: 12px 15px;
 }
+/*------------FIM DA NAVEGACAO--------------------------*/
 .capa {
 	text-align: center;
 }
 #carousel-spotify {
-	margin-top: 200px;
+	clear: both;
+	margin-top: 100px;
 	position: static;
 }
+#carousel-spotify.carousel-control-next.carousel-control-prev {
+	align-self: center;
+	width: 5%;
+	background: rgba(255, 255, 255, 0.6);
+}
+/*------CARROUSEL-------------------------*/
 
-/*cores
-ff4169
-7c26f8
+#home {
 
-*/
-
+}
+/*-----------clock----------------------*/
+.clock{
+	border-radius: 300px;
+	background: rgb #fff;
+	
+}
+.clock:hover {
+	background: rgba(0, 0, 0, 0.5);
+	color: #9bf0e1;
+}
+/*-----------fim do clock----------------------*/
 .botaobranco{
 	border-color: #fff;
 	color: white;
 }
-
+/*-----------section----------------------*/
 section#cartoes{
+	background: rgba(255, 255, 255, 0.6);
 	margin-top: 100px;
 }
 section#progresso{
+	background:rgba(255, 255, 255, 0.5);
 	margin-top: 100px;
 }
+/*---------------fim das sections -------------------------*/
+/*-----------clock----------------------*/
+/*------------cores----------------------
+ff4169
+7c26f8
+9bf0e1
+
+------------------cores--------------------------*/
 /*tipografia-----------------------------------------------------------------*/
 h1 {
 	font-weight: 900;
@@ -71,19 +97,52 @@ h3 {
 	letter-spacing: -0.04em;
 	color: white;
 }
-h4 {
+#cartoes.card.card-header h4 {
 	text-align: center;
-	text-black-50
+	text-color: #9bf0e1;
+	list-style: none;
+
 }
-/*Extra smal devices 576px--------------------------------------------------*/
-@media (max-width: 575.98px) {
-	.btn-custom{
-		margin: 10px 15px;
+/*-----------fim da tipografia----------------------*/
+/*--------------------ANIMACAO DA CAIXA---------------------*/
+#caixa {
+	margin-top: 100px;
+	margin-left: 50px;
+	border-radius: 300px;
+}
+@keyframes animacao-caixa {
+	from {/*estado inicial*/
+			/*background: red;*/
+			border-radius: 300px;
+			top: 100px;
+			left: 50px;
+	}
+	to {/*estado final*/
+	/*background: yellow;*/
+		border-radius: 300px;
+		top: 100px;
+		bottom: 100px;
+		left: 800px;
+		right: 100px;
+
 	}
 }
-
-
-/*RODAPE----------------------------------------------------------------------*/
+#caixa {
+	margin-bottom: 5%;
+	animation: animacao-caixa 5s 1s 2 alternate;
+	width: 300px;
+	height:300px;
+	/*background: red;*/
+	position: relative;
+	/*
+	animation-name:animacao-caixa;
+	animation-duration:5s;
+	animation-delay: 3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	*/
+}
+/*---------------------RODAPE----------------------------------------------------------------------*/
 footer {
 	background: #000;
 	padding-bottom: 10%;
@@ -105,9 +164,19 @@ footer .navbar-nav a:hover {
 footer ul {
 	list-style: none;
 }
-
+/*----------------------FIM DO RODAPE------------------------------------------------------------*/
+/*Extra smal devices 576px--------------------------------------------------*/
+@media (max-width: 575.98px) {
+	.btn-custom{
+		margin: 10px 15px;
+	}
+}
 /*Smal devices 576px and up-------------------------------------------------------*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+	button toggle {
+		margin-right: 2em;
+	}
 	h1{
 		font-size: 3em;
 	}
