@@ -11,7 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <script src="data-dinamica.js"></script>
+    <script src="js/data-dinamica.js"></script>
     <!-- HTML5Shiv -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -19,7 +19,7 @@
 
     <title>-Portifólio-</title>
   </head>
-  <body onload="carregaJogo()">
+  <body>
     <header>
       <!--INICIO DO CABEÇALHO------------------------------------------------------------>
       <nav class="navbar navbar-expand-md navbar-light  navbar-transparente">
@@ -61,11 +61,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div id="caixa">
+            <div id="caixa-eu">
               <img src="img/ro.jfif" style="border-radius: 300px"; width="300px" height="300px">  
             </div> 
 
-                <h1 class="text-light">Roger Ferreira</h1>
+                <h1>Roger Ferreira</h1>
                 <h2 style="color: red;">Student, Developer and a persistent player in the rpg of life.</h2>
                     
           </div>
@@ -80,18 +80,18 @@
         <div class="row">
           <div class="col-md-12">
 
-            <h1>About me</h1>
+            <h1 style="color: #393942">About me</h1>
 
               <h2>
                 I'm Roger Ferreira from Brasil!
                 I love programming, as well as running, taking photos and learning new things!
                 Feel free to get in touch or take a look at my past work below.
               </h2>
-            <!---  
-            <div id="caixa">
-              <img src="img/mosca.png" style="border-radius: 300px"; width="300px" height="300px">  
+           
+            <div id="mosca" style="color: rgba(0, 0, 0, 0.8);" onmouseover="carregaMosca()">
+              <img src="img/mosca.png" style="border-radius: 300px"; width="300px" height="300px">
             </div>
-          -->
+          
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="text-danger display-5">Projetos</h1>
+            <h1 style="color: red;" class="display-5">Projetos</h1>
           </div>    
         </div> 
       </div>
@@ -110,7 +110,7 @@
     <section id="secao-carrosel" class="d-flex"><!--INICIO SEÇAO CARROSEL------------------------------------>  
       <div class="container align-self-center">
         <div class="row">
-          <div class="col-10 col-md-12 capa">
+          <div class="col-12 capa">
 
             <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner"><!---INICIO DA INNER-------------------------->
@@ -150,12 +150,21 @@
         </div>
       </div>
     </section><!---FIM DA SEÇAO CARROSEL------------------------------------------------------>
-
-    <section id="cartoes"><!--- INICIO DA SECAO DE CARTOES --------------------------------------------->
-      <div class="container"><!---INICIO DO PRIMEIRO CONTAINER------------------------->
+    <section id="limpa-fluxo" style="clear: both;">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 ">
-            <div class="card bg-danger text-white cartao-padrao">
+          <div class="col-12">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cartoes" class="d-flex"><!--- INICIO DA SECAO DE CARTOES --------------------------------------------->
+      <div class="container align-self-center no-wrap"><!---INICIO DO PRIMEIRO CONTAINER------------------------->
+        <div class="row ">
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="card bg-danger text-white">
               <div class="card-header">
                 <h4 class="card-title text-white">Finanças</h4>
               </div>
@@ -165,8 +174,8 @@
             </div>
           </div>
       
-          <div class="col-12 col-md-6 d-flex" >
-            <div class="card bg-primary text-white cartao-padrao">
+          <div class="col-12 col-sm-6 col-lg-3" >
+            <div class="card bg-primary text-white ">
               <div class="card-header">
                 <h4 class="card-title">Museu</h4>
               </div>
@@ -175,12 +184,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div><!---FIM DO PRIMEIRO CONTAINER----------------------------->
-      <div class="container"><!---INICIO DO SEGUNDO CONTAINER------------------------->
-        <div class="row">    
-          <div class="col-12 col-md-6">
-            <div class="card bg-info text-white cartao-padrao">
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card bg-info text-white ">
               <div class="card-header">
                 <h4 class="card-title">Paralax</h4>       
               </div>
@@ -189,8 +195,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="card bg-white text-black cartao-padrao">
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card bg-white text-black ">
               <div class="card-header">
                 <h4 class="card-title">Spotify Clone</h4>
               </div>
