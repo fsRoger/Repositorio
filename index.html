@@ -8,6 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <!-- JavaScript (Opcional) -->
+      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -19,13 +26,13 @@
 
     <title>-Portifólio-</title>
   </head>
-  <body>
+  <body">
     <header>
       <!--INICIO DO CABEÇALHO------------------------------------------------------------>
       <nav class="navbar navbar-expand-md navbar-light  navbar-transparente">
         <div class="container">
           <a href="index.html" class="navbar-brand">
-            <i class="fab fa-r-project fa-4x text-light"></i>
+            <img src="img/mosca.png" class="logo"></i>
           </a>
 
           <button class="navbar-toggler bg-light"  data-toggle="collapse" data-target="#nav-principal">
@@ -84,14 +91,10 @@
 
               <h2>
                 I'm Roger Ferreira from Brasil!
-                I love programming, as well as running, taking photos and learning new things!
+                I love challenges, I code, I play basketball, I train calisthenics and I'm always learning new things!
                 Feel free to get in touch or take a look at my past work below.
-              </h2>
-           
-            <div id="mosca" style="color: rgba(0, 0, 0, 0.8);" onmouseover="carregaMosca()">
-              <img src="img/mosca.png" style="border-radius: 300px"; width="300px" height="300px">
-            </div>
-          
+              </h2>    
+            
           </div>
         </div>
       </div>
@@ -101,7 +104,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 style="color: red;" class="display-5">Projetos</h1>
+            <h1 class="display-5 text-danger">Projetos</h1>
           </div>    
         </div> 
       </div>
@@ -150,11 +153,14 @@
         </div>
       </div>
     </section><!---FIM DA SEÇAO CARROSEL------------------------------------------------------>
-    <section id="limpa-fluxo" style="clear: both;">
+    <section id="limpa-fluxo">
       <div class="container">
         <div class="row">
           <div class="col-12">
-          
+            <h2>MATE MOSCAS</h2>
+            <a href="https://fsroger.github.io/javaScript/" ><!--onmouseover="alert('foi')"-->
+              <img src="img/mosca.png" id="caixa">
+            </a>
           </div>
         </div>
       </div>
@@ -164,34 +170,38 @@
       <div class="container align-self-center no-wrap"><!---INICIO DO PRIMEIRO CONTAINER------------------------->
         <div class="row ">
           <div class="col-12 col-sm-6 col-lg-3 ">
-            <div class="card bg-danger text-white">
-              <div class="card-header">
-                <h4 class="card-title text-white">Finanças</h4>
+            <a href="https://fsroger.github.io/despesas/">
+              <div class="card bg-danger text-white">
+                <div class="card-header">
+                  <h4 class="card-title text-white">APP DESPESAS</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">É um APP para você que pretende organizar sua vida financeira, nele você pode salvar despesas futuras e organizar sua vida finançeira.</p>
+                </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">O FINANS é um site para você que pretende organizar sua vida financeira, nele você conta com ferramentas como a calculadora, e o aplicativo de despesas.</p>
-              </div>
-            </div>
+            </a>
           </div>
       
           <div class="col-12 col-sm-6 col-lg-3" >
-            <div class="card bg-primary text-white ">
-              <div class="card-header">
-                <h4 class="card-title">Museu</h4>
+            <a href="https://intecomerce.github.io/intecomerces/">
+              <div class="card bg-primary text-white ">
+                <div class="card-header">
+                  <h4 class="card-title">E-comerce</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Projeto de site de e-comerce voltado para tecnologia e dispositivos elétrônicos.</p>
+                </div>
               </div>
-              <div class="card-body">
-                <p class="card-text">O FINANS é um site para você que pretende organizar sua vida financeira, nele você conta com ferramentas como a calculadora, e o aplicativo de despesas.</p>
-              </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card bg-info text-white ">
               <div class="card-header">
-                <h4 class="card-title">Paralax</h4>       
+                <h4 class="card-title">MARIO-CLONE</h4>       
               </div>
               <div class="card-body">
-                <p class="card-text">O FINANS é um site para você que pretende organizar sua vida financeira, nele você conta com ferramentas como a calculadora, e o aplicativo de despesas.</p>
+                <p class="card-text">Um game inspirado no famoso jogo de plataforma, mario, feito completamente com html, css e javascript.</p>
               </div>
             </div>
           </div>
@@ -199,10 +209,10 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card bg-white text-black ">
               <div class="card-header">
-                <h4 class="card-title">Spotify Clone</h4>
+                <h4 class="card-title">PHP Projeto</h4>
               </div>
               <div class="card-body">
-                <p class="card-text">O FINANS é um site para você que pretende organizar sua vida financeira, nele você conta com ferramentas como a calculadora, e o aplicativo de despesas.</p>
+                <p class="card-text">O FINANS é um site para você que pretende organizar sua vida financeira, nele você conta com ferramentas como a calculadora.</p>
               </div>
             </div>
           </div>
@@ -210,57 +220,20 @@
       </div><!---FIM DO CONTAINER-->
     </section><!----------------FIM DA SECAO DE CARTOES--------------->
 
-    <section><!--INICIO DA SECAO DE LANCAMENTOS-----------------------------------------------------
-        <div  class="container" >
-          <div class="row">
-            <div class="col-md-6">
-            
-            <div class="caixa-branca">
-
-               <h2>O que está por vir...</h2>
-              
-              <br>
-              <h2>ANDROID</h2>
-              <div class="progress">
-                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
-              </div>
-              <br>
-              <h2>REACT</h2>
-              <div class="progress">
-                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
-              </div>
-              <br>
-              <h2>PYTHON</h2>
-              <div class="progress">
-                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:30%">30%</div>
-              </div>
-              <br>
-              <h2>PHP</h2>
-              <div class="progress">
-                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
-              </div>
-            </div>
-
-          <div class="col-md-6">
-            <div id="progresso" >
-                
-            </div>
-        </div> 
-      </div>
-    </section>
-      --->
+    <section><!--INICIO DA SECAO DE LANCAMENTOS----------------------------------------------------->
+       
 
     <footer><a name="div-contatos"></a><!---------------INICIO DO RODAPE------------------->
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <a href="index.html" class="navbar-brand">
-              <i class="fab fa-r-project fa-4x text-light"></i>
+              <i class=" fa-4x text-light"></i>
             </a>
           </div>
           
           <div class="col-md-3">
-            <h4>Links uteis</h4>
+            <h4>Links Úteis</h4>
             <ul class="navbar-nav">
               <li><a href="paralax/index.html">Paralax</a></li>
               <li><a href="projeto-inicial-spotify/index.html">Spotify</a></li>
@@ -293,11 +266,6 @@
 
     
 
-       <!-- JavaScript (Opcional) -->
-      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-          
+       
   </body>
 </html>
