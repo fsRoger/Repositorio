@@ -3,9 +3,13 @@ html, body, #home {
 	overflow-x: hidden;
 }
 body {
-	background: url(../img/paralaxe.png)repeat-x;
+	/*background: url(../img/paralaxe.png)repeat-x;*/
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
+
+}
+.logo{
+	width: 90px;
 }
 /*tipografia-------------------------------------------------------*/
 h1 {
@@ -113,9 +117,25 @@ nav.navbar-transparente {
 	z-index: -100;
 }
 */
+.mosquito1 {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	float: left;
 
-/*-----------section----------------------*/
-
+}
+.mosquito2 {
+	clear: both;
+	width: 60px;
+	height: 60px;
+}
+.mosquito3 {
+	width: 70px;
+	height: 70px;
+}
+.ladoA{
+	transform: scaleX(-1);
+}
 /*---------------fim das sections -------------------------*/
 /*-----------clock----------------------*/
 /*------------cores----------------------
@@ -136,8 +156,10 @@ ff4169
 }
 
 #caixa {
-	margin-top: 100px;
-	margin-left: 50px;
+	height: 40px;
+	width: 40px;
+	top:20px ;
+	left:10px ;
 	border-radius: 300px;
 }
 /*--------------------ANIMACAO DA CAIXA---------------------*/
@@ -145,13 +167,13 @@ ff4169
 	from {/*estado inicial*/
 			background: yellow;
 			border-radius: 300px;
-			top: 100px;
+			top: 20px;
 			left: 50px;
 	}
 	to {/*estado final*/
 		background: red;
 		border-radius: 300px;
-		top: 100px;
+		top: 20px;
 		bottom: 100px;
 		left: 800px;
 		right: 100px;
@@ -178,6 +200,7 @@ ff4169
 
 
 footer {
+	clear: both;
 	background: rgb(39, 39, 42, 1);
 	padding-bottom: 10%;
 	position: relative;
